@@ -39,13 +39,11 @@
 
     <!-- ======================================================================================================= -->
     <div class="container-fluid h_nav sticky-top">
-        <div class="container px-lg-2 px-0">
-            <nav class="navbar navbar-expand-lg  navbar-light p-lg-0">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg  navbar-light position-relative">
                 <a href="" class="navbar-brand">
                     <img src="images-01/logos/1.png" class="hero_logo_01" loading="lazy" alt="">
                 </a>
-                <a href="" class="btn c_btn  fw-normal d-lg-none" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">Enquire Now</a>
                 <button type="button" class="navbar-toggler fs_13 me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -53,8 +51,12 @@
                 <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarCollapse">
                     <div class="navbar-nav">
                         <div class="">
-                            <a href="" class="btn c_btn py-2 px-3" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Enquire Now</a>
+                            <button type="submit" class="btn c_btn">
+                                <span class="icon-box-01 p-2">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </span>
+                                <span class="btn-text px-4">Register Now</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -66,9 +68,9 @@
         <!-- Topbar End -->
 
 
-        <section class="bg-blue-l py-5">
+        <section class="bg-grad02 hero-01">
             <div class="container">
-                <div class="row border align-items-center py-5">
+                <div class="row align-items-center py-5">
                     <div class="col-lg-4">
                         <div class="event-info-box text-white">
                             <h2 class="event-title">
@@ -82,14 +84,14 @@
 
                                 <div class="event-location">
                                     <strong>Apparel House,</strong>
-                                    <p class="mb-0">Sec 44, Gurugram</p>
+                                    <p class="mb-0 text-lg-center">Sec 44, Gurugram</p>
                                 </div>
 
                                 <div class="divider"></div>
 
                                 <div class="event-date text-end">
                                     <strong>2–3 August 2025</strong>
-                                    <p class="mb-0">Sat–Sun | 10AM – 6PM</p>
+                                    <p class="mb-0  text-lg-center">Sat–Sun | 10AM – 6PM</p>
                                 </div>
 
                             </div>
@@ -97,9 +99,22 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4"></div>
-                    <div class="col-lg-4">
-                        <div class="enquiry-card">
+                    <div class="col-lg-5">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="vertical-owl owl-carousel  py-5">
+                                    <div class="v-item"><img src="images-01/hero/1.png"></div>
+                                    <div class="v-item"><img src="images-01/hero/2.png"></div>
+                                    <div class="v-item"><img src="images-01/hero/3.png"></div>
+                                    <div class="v-item"><img src="images-01/hero/4.png"></div>
+                                    <div class="v-item"><img src="images-01/hero/5.png"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="enquiry-card p-3">
                             <h4 class="mb-4 text-white">Enquire Now</h4>
                             <?php include "form_01.php" ?>
                         </div>
@@ -110,15 +125,15 @@
 
         <!-- ------------------------------------------------------------------------------------------------------------------ -->
         <section class="py-5 bg-white" id="gallery">
-            <div class="container bg-white rounded-3 px-lg-5 px-3 py-5">
+            <div class="container">
                 <div class="row gy-4">
                     <?php
                     $a = array('1','2','3','4');
                         for ($i=0; $i < count($a); $i++) { 
                     ?>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-6">
                         <div class="px-3">
-                            <img src="images-01/stats/0<?= $a[$i]; ?>.png" class="">
+                            <img src="images-01/stats/0<?= $a[$i]; ?>.png" class="w-100">
                         </div>
                     </div>
                     <?php
@@ -127,101 +142,38 @@
                 </div>
         </section>
 
-        <section>
-            <div class="container-fluid bg-grad01 py-5" >
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="">
-                                <p>Exciting Opportunities for Parents!</p>
-                                <h3 class="display-">Pre-schedule Your School Appointments</h3>
-                                <p>To Avoid Rush</p>
-                            </div>
 
-                            <button type="submit" class="btn submit-btn w-100 bg-blue-d">
-                                <span class="icon-box">
-                                    <i class="bi bi-arrow-up-right"></i>
-                                </span>
-                                <span class="btn-text">SUBMIT</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!---Stats start--->
-        <section class="px-lg-5 pt-2 pb-4">
-            <div class="container px-lg-0">
-                <div class="row justify-content-center pt-3">
-                    <?php
-                    $b = array("Universities",  "Institutions",  "Students",  "Alumni",  "Courses");
-                    $c = array(  "05" , "80" , "70K+" , "5L+" , "5K+" );
 
-                    for ($i=0; $i < count($b); $i++) {
-                    ?>
-                    <div class="col-lg col-6-custom mb-3 mb-lg-0">
-                        <div class=" usp_01 bg-pinkGradient">
-                            <div class=" text-center stat_01">
-                                <!-- <img src="images/stats/1.png" class="filter" alt=""> -->
-                                <h6 class=" rank text-white mb-0  pt-3 h3"><?= $c[$i]; ?></h6>
-                                <p class="text-white"><?= $b[$i]; ?></p>
-                            </div>
-                        </div>
-                    </div>
-                    <?php 
-                    }
-                 ?>
-                </div>
-            </div>
-        </section>
-        <!-- ---------------------------------------------------------------------------------------------------- -->
-
-        <!-- About Us -->
-        <section class="aboutUs" id="about-us">
-            <div class="container py-5 bg-white rounded-3">
-                <div class="row">
-                    <div class="col-lg-4 pb-3  pb-lg-0">
-                        <h2 class=" fw-normal display-5 title_01  text-center text-lg-start"> About School of Law &
-                            Public Policy </h2>
-                    </div>
-                    <div class="col-lg-8 pe-3 text-justify">
-                        <img src="images/about/1.png" class="img-fluid d-md-none rounded-3 border mb-4" alt="">
-                        <p>The School of Law & Public Policy is approved by the Bar Council of India. Avantika offers a
-                            5-year, full-time Bachelor of Arts - Bachelor of Law (BA LLB Hons.), Bachelor of Business
-                            Administration, Bachelor of Law (BBA LLB Hons.) in the discipline - Constitutional Law,
-                            Corporate Law, Criminal Law, and International Law.</p>
-                        <div class=" text-center text-lg-start">
-                            <a href="" class="btn c_btn py-2 px-3" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Enquire Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- ----------------------------------------------------------------------------------------------------------- -->
-        <section class="py-5" id="placement">
-            <div class="container py-5 bg-white rounded">
+        <section class="py-5  bg-white" id="placement">
+            <div class="container rounded">
                 <div class="row justify-content-center company">
                     <div class="col-md-12  rounded-3  ">
                         <div class="row ">
                             <div class="col-lg-12 text-center">
-                                <h2 class=" fw-normal mb-4 display-5 title">Our Collaborations</h2>
-                                <p>Avantika University offers unparalleled career prospects through
-                                    placement opportunities with elite companies, top corporations, Fortune
-                                    500 organizations, and unicorn start-ups of national and global repute.
-                                    We bridge talent with opportunity, with job placements at the forefront of
-                                    innovation and excellence.</p>
+                                <h5 class="mb-4 fw-bold font-02">Participating Schools</h5>
                             </div>
                         </div>
                         <div class="row placement_01 py-3 rounded-3  owl-carousel justify-content-center text-center">
                             <?php
                             
-                            for ($i=0; $i < 3; $i++) {
+                            for ($i=0; $i < 6; $i++) {
                             ?>
-                            <div class=" company_01 ">
-                                <img src="images/placement/<?= $i+1;?>.png" loading="lazy" class=""
-                                    alt="Placement Companies">
+                            <div class="company_01">
+                                <img src="images-01/school/<?= $i+1;?>.png" loading="lazy" class="py-2" alt="">
+                            </div>
+                            <?php
+                            } 
+                            ?>
+                        </div>
+                        <div class="row placement_01 owl-carousel justify-content-center text-center  pt-3 rounded-3  ">
+                            <?php
+                            
+                            for ($i=0; $i < 6; $i++) {
+                            ?>
+                            <div class="company_01">
+                                <img src="images-01/school/<?= $i+1;?>.png" loading="lazy" class="py-2" alt="">
                             </div>
                             <?php
                             } 
@@ -232,88 +184,157 @@
                 </div>
             </div>
         </section>
-        <!-- ----------------------------------------------------------------------------------------------------------- -->
-        <section class="" id="testimonals">
-            <div class="container bg-white rounded-3 px-lg-5 px-0 py-5 ">
-                <div class="row justify-content-end align-items-center">
+        <section class="school-category-section py-5 bg-white">
+            <div class="container">
+                <div class="row ">
                     <div class="col-lg-12 text-center">
-                        <h2 class=" fw-normal mb-4 display-5 text-blue-l title">Testimonials</h2>
+                        <h3 class="mb-4 fw-bold">Choose the School That Fits You Best</h3>
                     </div>
                 </div>
-                <div class="row testimonals_01 owl-carousel ">
-                    <?php 
-                                    $a = array(  "Aarzoo Vishwakarma",  "Aneesh Sikarwar",  "Khushi Lodhwal",  "Kasturi Pathak");
-                                    $aCourse = array( "BA LL.B, (1st Year)",  "BA LL.B, (1st Year)", "BA LL.B (1st Year)",  "BBA LL.B, (1st Year)");
-                                    $b = array( "Avantika University stands out as a beacon of excellence, providing a nurturing environment where students embark on a journey of self-discovery and growth. With a curriculum designed to foster exploration, students are encouraged to delve deep within themselves, uncovering their passions and potentials." , 
-                                    "My experience of studying at Avantika University has been extremely amazing. Even if you are a newbie, the knowledge provided here evolves you into your best version.",
-                                    "The university's innovative approach to education, centeblue-l on practical learning, has reshaped my understanding. The faculty members at Avantika are exceptionally knowledgeable, experienced, and dedicated to their fields. The diverse range of activities provided further enriched our learning journey.",
-                                    "I am thrilled to be a part of Avantika University. Since enrollment, I have discoveblue-l the true essence of education here. It offers a comprehensive range of knowledge, with excellent facilities that contribute to the shaping of our future.");
-                                    $c = array( "1", "2", "3", "4");
-                                    for ($i=0; $i < count($a) ; $i++) { 
-                                ?>
-                    <div class="col-lg-12  item testimonial-items  mb-4 item px-lg-3 px-5 py-3">
-                        <div class="row px-lg-2 pb-2 pb-lg-0">
+                <div class="row  schoolCategories owl-carousel g-4">
+
+                    <?php
+                        $schoolCategories = [
+                            [
+                                "title" => "Pre-Schools & Early Learning Centres",
+                                "description" => "Nurturing foundational skills for toddlers and pre-primary children.",
+                                "bg_class" => "bg-img-1"
+                            ],
+                            [
+                                "title" => "K–12 CBSE Day Schools",
+                                "description" => "Reputed schools offering complete schooling from Kindergarten to Grade 12.",
+                                "bg_class" => "bg-img-2"
+                            ],
+                            [
+                                "title" => "Heritage to New-Age Schools",
+                                "description" => "Time-tested schools to innovative pedagogy, tech enabled, future-ready schools.",
+                                "bg_class" => "bg-img-3"
+                            ],
+                            [
+                                "title" => "International Curriculum Schools",
+                                "description" => "Offering IB, Cambridge, Finnish and other global curricula.",
+                                "bg_class" => "bg-img-4"
+                            ]
+                        ]; foreach ($schoolCategories as $category) { ?>
+                    <div class="">
+                        <div class="school-card <?= $category['bg_class']; ?>">
+                            <div class="overlay"></div>
+                            <div class="card-content">
+                                <h6><?= $category['title']; ?></h6>
+                                <p><?= $category['description']; ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <?php } ?>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- ----------------------------------------------------------------------------------------------------------- -->
+        <section>
+            <div class="container-fluid bg-grad01  px-0">
+                <div class="container-fluid  px-0">
+                    <div class="row align-items-center px-0">
+                        <div class="col-lg-5  py-5 ps-4">
+                            <div class="">
+                                <p class="text-purple mb-0">Exciting Opportunities for Parents!</p>
+                                <h3 class="fw-normal">Pre-schedule Your School Appointments</h3>
+                                <p class="text-purple">To Avoid Rush</p>
+                            </div>
+                            <div class="">
+                                <button type="submit" class="btn c_btn">
+                                    <span class="icon-box-01 p-2">
+                                        <i class="bi bi-arrow-up-right"></i>
+                                    </span>
+                                    <span class="btn-text px-4">PRE-SCHEDULE NOW</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 px-0">
+                            <img src="images-01/background/1.png" class="w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------------------------------------------------------------------------------------------------- -->
+        <section class="bg-exhibition" id="testimonals">
+            <div class="container pt-5 ">
+                <div class="row justify-content-end align-items-center">
+                    <div class="col-lg-12 text-center">
+                        <h2 class=" fw-normal mb-4 text-white">What Makes This Exhibition a Must-Visit</h2>
+                    </div>
+                </div>
+                <?php
+                    $testimonials = [
+                        [
+                            "name" => "Interact Directly with School Heads ",
+                            "message" => "Get answers straight from the experts",
+                            "image" => "1"
+                        ],
+                        [
+                            "name" => "Compare Curriculum & Pedagogy",
+                            "message" => "Understand the differences between CBSE, ICSE, IB, Cambridge, Finnish & more",
+                            "image" => "2"
+                        ],
+                        [
+                            "name" => "Get Exclusive Fee Structures & Offers",
+                            "message" => "Access transparent information and avail offers",
+                            "image" => "3"
+                        ],
+                        [
+                            "name" => "Explore Schools Offerings",
+                            "message" => "Preview infrastructure, co-curricular, teaching methodology and culture",
+                            "image" => "4"
+                        ],
+                        [
+                            "name" => "Explore Schools Offerings",
+                            "message" => "Preview infrastructure, co-curricular, teaching methodology and culture",
+                            "image" => "4"
+                        ]
+                    ];
+                    ?>
+
+                <div class="row testimonals_01 owl-carousel">
+                    <?php foreach ($testimonials as $item) { ?>
+                    <div class="col-lg-12 item testimonial-items mb-4 p-3">
+                        <div class="row px-lg-2 pb-2">
                             <div
-                                class="shadow d-flex flex-column justify-content-between align-items-start test_002 rounded-3 px-4 py-5">
-                                <img src="images/testimonal/comma.png" class="comma mb-lg-2" alt="">
-                                <p class="mb-0">"<?= $b[$i] ;?>"</p>
-                                <div class="d-flex border-top pt-3 flex-row gapStudentName w-full pe-2">
-                                    <img class="studentImg" src="images/testimonal/<?= $c[$i] ;?>.png" alt="">
-                                    <div class="d-flex flex-column justify-content-center">
-                                        <p class="studentName_01 mb-0"><?= $a[$i] ;?></p>
-                                        <p class="small_01"> <?= $aCourse[$i] ;?> </p>
-                                    </div>
-                                </div>
+                                class="shadow d-flex flex-column justify-content-between align-items-start test_002 rounded-3 px-4 py-5 bg-pink">
+                                <img class="studentImg" src="images-01/exhibition/<?= $item['image']; ?>.png" alt="">
+                                <h6 class="studentName_01 mb-0 fw-bold"><?= $item['name']; ?></h6>
+                                <p class="mb-0">"<?= $item['message']; ?>"</p>
+
                             </div>
                         </div>
                     </div>
                     <?php } ?>
                 </div>
+
             </div>
         </section>
+        <div class="">
+            <img src="images-01/exhibition/bg-01.png" class="w-100" alt="">
+        </div>
 
         <!-- ----------------------------------------------------------------------------------------------------------- -->
-        <section class="pt-5" id="admission-process">
-            <div class="container bg-white rounded-3">
-                <div class="row align-items-center py-4">
-                    <div class="col-lg-12  text-center">
-                        <h2 class=" fw-normal  display-5 title_01">Admission Process</h2>
-                    </div>
-                    <img src="images/steps/1.webp" class="img-fluid d-lg-block d-none" alt="">
-                    <img src="images/steps/2.webp" class="img-fluid d-block d-lg-none" alt="">
-                </div>
-            </div>
-        </section>
-        <!-- ----------------------------------------------------------------------------------------------------------- -->
-
-        <!-- ------------------------------------------------------------------------------------------------------------------ -->
-
-        <!-- ------------------------------------------------------------------------------------------------------------------ -->
-        <section class="">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-8 advertise_01 text-center">
-                        <div class="">
-                            <h3 class="">Education for the Next Generation to Build a Better World
-                            </h3>
-                            <p class="ctasize">Admissions Open 2025</p>
-                            <button class="btn c_btn py-lg-2 px-lg-4 px-4 px-2 fs-6 fw-bold" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Apply
-                                Now</button>
-                            <div class="pt-4">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ------------------------------------------------------------------------------------------------------------------ -->
-
         <?php include 'footer.php';?>
+            <div class="register-btn-wrap d-flex d-md-none">
+                <a href="#Program" class="left_button">
+                    REGISTER NOW
+                </a>
+                <button type="button"
+                    class="right_button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    7635+ PARENTS REGISTERED
+                </button>
+            </div>
 
-        <a href="#Program" class="btn c_btn rounded-pill d-md-none px-4 left_button">Programs</a>
-        <button type="button" class="btn c_btn  px-4 right_button " data-bs-toggle="modal"
-            data-bs-target="#exampleModal">Apply Now</button>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog p-0">
                 <div class="modal-content ">
@@ -369,35 +390,30 @@
                     }
                 });
             });
-
-            // Select all blue-lirect buttons
-            const blue - lirectBtns = document.querySelectorAll('.blue-lirectBtn');
-
-            blue - lirectBtns.forEach(button => {
-                button.addEventListener('click', function (event) {
-                    event.preventDefault(); // Prevent the default anchor behavior
-
-                    // Get the target section's ID
-                    const targetId = this.getElementById('programs').substring(1);
-                    const targetElement = document.getElementById(targetId);
-
-                    if (targetElement) {
-                        // Get the target element's position and apply the 80px offset
-                        const targetPosition = targetElement.getBoundingClientRect().top + window
-                            .scrollY - 80;
-
-                        // Smoothly scroll to the target position
-                        window.scrollTo({
-                            top: targetPosition,
-                            behavior: 'smooth'
-                        });
-                    }
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('.vertical-owl').owlCarousel({
+                    items: 2,
+                    loop: true,
+                    margin: 20,
+                    autoplay: true,
+                    autoplayTimeout: 0,
+                    autoplaySpeed: 2500,
+                    smartSpeed: 2500,
+                    slideTransition: 'linear',
+                    dots: false,
+                    nav: false,
+                    mouseDrag: false,
+                    touchDrag: false,
+                    pullDrag: false,
+                    freeDrag: false
                 });
             });
         </script>
-        <script>
 
-        </script>
+
+
 </body>
 
 </html>
