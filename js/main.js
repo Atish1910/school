@@ -130,7 +130,6 @@
     l = document.getElementById("typing");
   document.addEventListener("DOMContentLoaded", () => setTimeout(d, 500)),
     document.addEventListener("DOMContentLoaded", function () {
-      debugger;
       const a = document.querySelectorAll(".nav-item.nav-link"),
         b = document.querySelectorAll("section");
       window.addEventListener("scroll", function () {

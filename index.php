@@ -108,7 +108,47 @@
             </div>
         </section>
 
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <section class="py-5 bg-white" id="gallery">
+            <div class="container bg-white rounded-3 px-lg-5 px-3 py-5">
+                <div class="row gy-4">
+                    <?php
+                    $a = array('1','2','3','4');
+                        for ($i=0; $i < count($a); $i++) { 
+                    ?>
+                    <div class="col-lg-3">
+                        <div class="px-3">
+                            <img src="images-01/stats/0<?= $a[$i]; ?>.png" class="">
+                        </div>
+                    </div>
+                    <?php
+                        }
+                    ?>
+                </div>
+        </section>
 
+        <section>
+            <div class="container-fluid bg-grad01 py-5" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="">
+                                <p>Exciting Opportunities for Parents!</p>
+                                <h3 class="display-">Pre-schedule Your School Appointments</h3>
+                                <p>To Avoid Rush</p>
+                            </div>
+
+                            <button type="submit" class="btn submit-btn w-100 bg-blue-d">
+                                <span class="icon-box">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </span>
+                                <span class="btn-text">SUBMIT</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!---Stats start--->
         <section class="px-lg-5 pt-2 pb-4">
@@ -231,70 +271,7 @@
                 </div>
             </div>
         </section>
-        <!-- ----------------------------------------------------------------------------------------------------------- -->
-        <!-- USP - About Avantika University -->
-        <section class="uspSection mt-5" id="usp">
-            <div class="container pt-5 bg-white rounded-3">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-10  text-center mb-3 pb-2">
-                        <h2 class=" fw-normal display-5 title_01">Why Choose Avantika School of Law & Public Policy?
-                        </h2>
-                        <p class="text-center">At Avantika University, our ethos is embodied in three powerful words,
-                            <span class="text-blue-l"> Create, Change,
-                                Transform.</span> Nestled in a 60-acre green campus that believes in the motto of
-                            Avantika, the
-                            21st-century pedagogy focuses on <span class="text-blue-l">"How to Learn"</span> and not
-                            <span class="text-blue-l">"What to Learn".</span></p>
-                    </div>
-                </div>
-                <?php
-                        $a_usp1=array("Mentor-Mentee Engagement", "Regional and Cultural Diversity", "24/7 Smart Campus","Cross Disciplinary Approach","Professional Skill Development Activities (PSDA)");
-                        $a_usp2=array("Top-notch Infrastructure", "Innovation and Incubation Center","Best in class Moot Court","Continuous and Comprehensive Evaluation (CCE)","Collaboration over Competition ");
-                        $b_usp1 = array("1","2","3","4","5");
-                        $b_usp2 = array("6","7","8","9","10");
-                    ?>
-                <div class="row justify-content-center flex-wrap-reverse">
-                    <div class="col-lg-3 mb-lg-5">
-                        <div class="d-flex flex-column">
-                            <?php
-                            for ($i=0; $i < count($a_usp1) ; $i++) { 
-                            ?>
-                            <div class="d-flex border uspContainer p-2 mb-3 justify-content-end align-items-center">
-                                <h6 class="uspHeading pe-4 mb-0 text-end"><?= $a_usp1[$i] ;?></h6>
-                                <div
-                                    class="uspImgBox position-relative d-flex justify-content-center align-items-center">
-                                    <img class="uspIcon" src="images/usp/<?= $b_usp1[$i] ;?>.png" alt="img not found" />
-                                </div>
-                            </div>
-                            <?php
-                            }
-                            ?>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="studentBgImg" data-bgimg="images/usp/student.webp">
-                        </div>
-                    </div>
-                    <div class="col-lg-3  mb-lg-5">
-                        <div class="d-flex flex-column">
-                            <?php
-                                for ($i=0; $i < count($a_usp2) ; $i++) { 
-                                ?>
-                            <div class="d-flex border uspContainer p-2 mb-3 justify-content-start align-items-center">
-                                <div
-                                    class="uspImgBox position-relative d-flex justify-content-center align-items-center">
-                                    <img class="uspIcon" src="images/usp/<?= $b_usp2[$i] ;?>.png" alt="img not found" />
-                                </div>
-                                <h6 class="uspHeading ps-4 mb-0"><?= $a_usp2[$i] ;?></h6>
-                            </div>
-                            <?php
-                                }
-                                ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <!-- ----------------------------------------------------------------------------------------------------------- -->
         <section class="pt-5" id="admission-process">
             <div class="container bg-white rounded-3">
@@ -308,28 +285,7 @@
             </div>
         </section>
         <!-- ----------------------------------------------------------------------------------------------------------- -->
-        <!-- ------------------------------------------------------------------------------------------------------------------ -->
-        <section class="py-5" id="gallery">
-            <div class="container bg-white rounded-3 px-lg-5 px-3 py-5">
-                <div class="row justify-content-end align-items-center">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="text-blue-l fw-normal mb-4 display-5 title">Life@Avantika</h2>
-                    </div>
-                </div>
-                <div class="row gy-4 galleryimages">
-                    <?php
-                        $a = array('1','2','3','4','5','6','7','8','9');
-                            for ($i=0; $i < count($a); $i++) { 
-                        ?>
-                    <div class="col-lg-4">
-                        <img src="images/gallary/<?= $a[$i]; ?>.webp" alt="Life" class="border">
-                    </div>
-                    <?php
-                            }
-                        ?>
-                </div>
-            </div>
-        </section>
+
         <!-- ------------------------------------------------------------------------------------------------------------------ -->
 
         <!-- ------------------------------------------------------------------------------------------------------------------ -->

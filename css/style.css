@@ -84,6 +84,13 @@ h6 {
   font-size: 24px;
 }
 
+.bg-grad01 {
+  background-image: linear-gradient(
+    to right,
+    var(--pink) 50% 10%,
+    var(--bs-white) 0
+  );
+}
 .bg-pink,
 .your_path .border {
   background-color: var(--pink);
@@ -91,19 +98,6 @@ h6 {
 
 .bg-yellow {
   background-color: var(--yellow);
-}
-
-.subtitle {
-  line-height: 1.5em;
-  font-size: 14px;
-}
-
-.bg-dark {
-  background: var(--dark) !important;
-}
-
-.bg-grey {
-  background: var(--grey) !important;
 }
 
 .bg_testimonals,
@@ -123,22 +117,9 @@ h6 {
   bottom: 0;
 }
 
-.marquee,
-.typing-container {
-  overflow: hidden;
-  white-space: nowrap;
-}
-
 .back-to-top,
 .myProgramCard ul li:last-child .verticalLine {
   display: none;
-}
-
-.hero-img {
-  height: 300px;
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .bg_testimonals {
@@ -184,34 +165,6 @@ h6 {
 .zoho_form {
   height: 570px;
   width: 100%;
-}
-
-.h_partner {
-  border-radius: unset;
-  background-color: var(--blue-d);
-}
-
-.h_partner.h_part_apply {
-  background-image: url(../images/bg1.webp);
-  background-position: top;
-}
-
-.h_partner .h_btn,
-.h_partner h5 {
-  text-align: center;
-}
-
-#spinner {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease-out, visibility 0 linear 0.5s;
-  z-index: 99999;
-}
-
-#spinner.show {
-  transition: opacity 0.5s ease-out, visibility 0 linear 0;
-  visibility: visible;
-  opacity: 1;
 }
 
 .btn {
@@ -438,12 +391,6 @@ h6 {
   position: fixed;
   border-radius: 0 !important;
   z-index: 1021;
-}
-
-.company_01 img {
-  height: 80px;
-  aspect-ratio: 3/2;
-  mix-blend-mode: color-burn;
 }
 
 .testimonals_01 .owl-nav {
@@ -1336,6 +1283,8 @@ ul {
   color: #fff;
 }
 
+/* ======================================================================================================================================== */
+
 /* /////////////////////////////////// */
 .event-info-box {
   padding: 20px;
@@ -1343,7 +1292,6 @@ ul {
 
 .event-title {
   font-weight: 700;
-  font-size: 32px;
   line-height: 1.2;
 }
 
