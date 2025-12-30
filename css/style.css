@@ -64,8 +64,7 @@ h6 {
 .text-pink {
   color: var(--pink) !important;
 }
-
-.bg-exhibition {
+.bg-exhibition{
   background-color: #121146;
 }
 
@@ -113,9 +112,7 @@ h6 {
 .bg-yellow {
   background-color: var(--yellow);
 }
-
-.hero-01 h4,
-.custom-input {
+.hero-01 h4, .custom-input{
   font-family: var(--font_02);
 }
 
@@ -587,6 +584,23 @@ span.brownTriangle {
 }
 
 @media (min-width: 768px) {
+  .col_20 {
+    width: 20% !important;
+  }
+
+  .hero_mobile img {
+    object-fit: cover;
+    height: 860px;
+  }
+
+  .bg_applynew {
+    height: unset;
+  }
+
+  .zoho_form {
+    height: 675px;
+    width: 100%;
+  }
 
   .bg_apply,
   .gallary .one,
@@ -594,9 +608,68 @@ span.brownTriangle {
     height: 300px;
   }
 
-  .bg-pinkGradient {
-    background-image: linear-gradient(90deg, var(--blue-l), var(--pink));
+  .form_03 {
+    height: 580px;
   }
+}
+
+.bg-pinkGradient,
+.uspImgBox {
+  background-image: linear-gradient(90deg, var(--blue-l), var(--pink));
+}
+
+.uspImgBox {
+  height: 50px;
+  width: 50px;
+  min-width: 50px;
+  border-radius: 100%;
+}
+
+.uspImgBox img {
+  height: 30px;
+  width: 30px;
+}
+
+.uspHeading {
+  color: #1c1c1c;
+}
+
+.uspSection .studentBgImg {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.uspImgBox:after,
+.uspImgBox:before {
+  content: "";
+  width: 1px;
+  height: 0.5rem;
+  background: var(--blue-l);
+  left: 25px;
+  position: absolute;
+}
+
+.uspImgBox:before {
+  bottom: -0.5rem;
+}
+
+.uspImgBox:after {
+  top: -0.5rem;
+}
+
+.h_gallrey .owl-prev,
+.owl-next,
+.programsMainBtns .nav-pills .nav-link.active,
+.programsMainBtns .nav-pills .show > .nav-link {
+  background-color: var(--yellow);
+  color: #fff;
+}
+
+.uspContainer:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 @media (max-width: 991px) {
@@ -678,8 +751,12 @@ span.brownTriangle {
     border-top-left-radius: unset !important;
   }
 
-  .school-01 .owl-nav .owl-next,
-  .school-01 .owl-nav .owl-prev {
+  .modal-body .zoho_form {
+    height: 545px;
+  }
+
+  .placement_01 .owl-nav .owl-next,
+  .placement_01 .owl-nav .owl-prev {
     width: 35px;
     height: 35px;
     font-size: 16px;
@@ -763,12 +840,12 @@ span.brownTriangle {
 
 /* Submit Button */
 .submit-btn {
-  display: flex;
-  align-items: center;
-  border: 2px solid #fff;
-  background: transparent;
-  color: #fff;
-  border-radius: 3px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 12px;
 }
 
 .icon-box {
@@ -820,8 +897,9 @@ span.brownTriangle {
 }
 
 /* Card */
-.hero-01 .event-card {
-  background: var(--yellow);
+.hero-01 
+.event-card {
+  background: #f9d79f;
   border-radius: 50px;
   padding: 18px 28px;
   color: #3b1361;
@@ -1029,29 +1107,29 @@ span.brownTriangle {
 
 /* Left button */
 .left_button {
-  background: linear-gradient(135deg, #3b1361, #6a1b9a);
-  color: #fff;
-  padding: 12px 26px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  font-size: 10px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(135deg, #3b1361, #6a1b9a);
+    color: #fff;
+    padding: 12px 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgba(255,255,255,0.2);
 }
 
 /* Right button */
 .right_button {
-  background: linear-gradient(135deg, #f5c37a, #f0a44c);
-  color: #2b144f;
-  padding: 12px 26px;
-  font-weight: 600;
-  font-size: 9px;
-  border: none;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+    background: linear-gradient(135deg, #f5c37a, #f0a44c);
+    color: #2b144f;
+    padding: 12px 26px;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 /* Hover */

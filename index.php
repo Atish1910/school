@@ -7,12 +7,12 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>premier Schools Eshibition</title>
+    <title>Avantika University - Top School of Law | MIT School of Law Avantika University Ujjain</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
     <!-- Favicon -->
-    <link href="images-01/logos/1.png" loading="lazy" rel="icon">
+    <link href="<?=LINK;?>images/logo/favicon.ico" loading="lazy" rel="icon">
 
 
     <!-- Icon Font Stylesheet -->
@@ -229,9 +229,7 @@
                 </div>
             </div>
         </section>
-
-        <!-- ----------------------------------------------------------------------------------------------------------- -->
-        <section class="school-category-section pb-5 bg-white">
+        <section class="school-category-section py-5 bg-white">
             <div class="container">
                 <div class="row ">
                     <div class="col-lg-12 text-center">
@@ -372,7 +370,6 @@
         </div>
 
         <!-- ----------------------------------------------------------------------------------------------------------- -->
-
         <?php include 'footer.php';?>
 
         <!-- ----------------------------------------------------------------------------------------------------------- -->
@@ -417,6 +414,54 @@
                 $(this).css('background-image', 'url(' + $(this).data('bgimg') + ')')
             })
         </script>
+        <script>
+            // Select all navigation links
+            const navLinks = document.querySelectorAll('.nav-item.nav-link');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault(); // Prevent the default anchor behavior
+
+                    // Get the target section's ID
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        // Get the target element's position and apply the 80px offset
+                        const targetPosition = targetElement.getBoundingClientRect().top + window
+                            .scrollY - 80;
+
+                        // Smoothly scroll to the target position
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('.vertical-owl').owlCarousel({
+                    items: 2,
+                    loop: true,
+                    margin: 20,
+                    autoplay: true,
+                    autoplayTimeout: 0,
+                    autoplaySpeed: 2500,
+                    smartSpeed: 2500,
+                    slideTransition: 'linear',
+                    dots: false,
+                    nav: false,
+                    mouseDrag: false,
+                    touchDrag: false,
+                    pullDrag: false,
+                    freeDrag: false
+                });
+            });
+        </script>
+
+
 
 </body>
 
