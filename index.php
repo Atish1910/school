@@ -7,12 +7,12 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Avantika University - Top School of Law | MIT School of Law Avantika University Ujjain</title>
+    <title></title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
     <!-- Favicon -->
-    <link href="<?=LINK;?>images/logo/favicon.ico" loading="lazy" rel="icon">
+    <link href="images/logo/favicon.ico" loading="lazy" rel="icon">
 
 
     <!-- Icon Font Stylesheet -->
@@ -40,7 +40,7 @@
     <!-- ======================================================================================================= -->
     <div class="container-fluid h_nav sticky-top">
         <div class="container">
-            <nav class="navbar navbar-expand-lg  navbar-light position-relative">
+            <nav class="navbar navbar-expand-lg  navbar-light">
                 <a href="" class="navbar-brand">
                     <img src="images-01/logos/1.png" class="hero_logo_01" loading="lazy" alt="">
                 </a>
@@ -184,6 +184,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- ----------------------------------------------------------------------------------------------------------- -->
         <section class="school-category-section py-5 bg-white">
             <div class="container">
                 <div class="row ">
@@ -322,18 +324,20 @@
         </div>
 
         <!-- ----------------------------------------------------------------------------------------------------------- -->
+        <?php include 'p.php';?>
+        <?php include 'program.php';?>
+        
         <?php include 'footer.php';?>
-            <div class="register-btn-wrap d-flex d-md-none">
-                <a href="#Program" class="left_button">
-                    REGISTER NOW
-                </a>
-                <button type="button"
-                    class="right_button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                    7635+ PARENTS REGISTERED
-                </button>
-            </div>
+
+        <!-- ----------------------------------------------------------------------------------------------------------- -->
+        <div class="register-btn-wrap d-flex d-md-none">
+            <a href="#Program" class="left_button">
+                REGISTER NOW
+            </a>
+            <button type="button" class="right_button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                7635+ PARENTS REGISTERED
+            </button>
+        </div>
 
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog p-0">
@@ -366,32 +370,6 @@
             })
         </script>
         <script>
-            // Select all navigation links
-            const navLinks = document.querySelectorAll('.nav-item.nav-link');
-
-            navLinks.forEach(link => {
-                link.addEventListener('click', function (event) {
-                    event.preventDefault(); // Prevent the default anchor behavior
-
-                    // Get the target section's ID
-                    const targetId = this.getAttribute('href').substring(1);
-                    const targetElement = document.getElementById(targetId);
-
-                    if (targetElement) {
-                        // Get the target element's position and apply the 80px offset
-                        const targetPosition = targetElement.getBoundingClientRect().top + window
-                            .scrollY - 80;
-
-                        // Smoothly scroll to the target position
-                        window.scrollTo({
-                            top: targetPosition,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-        </script>
-        <script>
             $(document).ready(function () {
                 $('.vertical-owl').owlCarousel({
                     items: 2,
@@ -411,9 +389,6 @@
                 });
             });
         </script>
-
-
-
 </body>
 
 </html>
